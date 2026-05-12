@@ -1,0 +1,37 @@
+{
+  "guards": {
+    "timeoutMs":              8000,
+    "maxInputLength":         2000,
+    "inputBlockThreshold":    0.8,
+    "outputBlockThreshold":   0.9,
+    "outputFallbackThreshold": 0.5,
+    "faqSimilarityThreshold": 0.4
+  },
+  "cache": {
+    "platformDocsTtlS":    3600,
+    "recommendationTtlS":  300
+  },
+  "rateLimit": {
+    "windowS":    60,
+    "maxAuthed":  20,
+    "maxAnon":    5
+  },
+  "circuitBreaker": {
+    "threshold":      5,
+    "windowS":        30,
+    "openDurationS":  60
+  },
+  "profiling": {
+    "decayHalfLifeDays":       30,
+    "cullThreshold":           0.1,
+    "messageWindowDepth":      15,
+    "chatLogDepth":            10,
+    "minSignalLength":         30,
+    "recentUserMessageCount":  3,
+    "classifierHistoryDepth":  5,
+    "controllerHistoryDepth":  9
+  },
+  "streaming": {
+    "jsonLeakBufferCap": 10000
+  }
+}

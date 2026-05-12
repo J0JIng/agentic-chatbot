@@ -1,0 +1,19 @@
+{
+  "reranking": {
+    "weights": {
+      "semantic":               0.65,
+      "interestOverlap":        0.10,
+      "difficultyMatch":        0.10,
+      "collaborativeFiltering": 0.05,
+      "enrolledPenalty":        0.10
+    }
+  },
+  "mmr": {
+    "lambda":  0.95,
+    "k":       8
+  },
+  "retrieval": {
+    "candidatePool": 200,
+    "rrfK":          60
+  }
+}
